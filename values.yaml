@@ -5,11 +5,22 @@
 replicaCount: 1
 
 image:
-  repository: nginx
+  repository: registry.solarfs.io/ipfs/explore.ipld.io
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
-
+  tag: "v0.1.0"
+env:
+  - name: TITLE
+    value: "cid-utils-website"
+envFrom: []
+extraVolumeMounts: #[] # 增加挂载扩展挂载目录
+  - mountPath: /etc/localtime
+    name: localtime
+    readOnly: true
+extraVolumes: #[] # 增加扩展卷
+  - name: localtime
+    hostPath:
+      path: /etc/localtime
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
