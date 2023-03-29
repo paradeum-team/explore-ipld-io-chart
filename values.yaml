@@ -6,7 +6,7 @@ image:
   repository: registry.solarfs.io/ipfs/explore-ipld-io
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "v0.1.6"
+  tag: "v0.1.7"
 env:
   - name: TITLE
     value: "cid-utils-website"
