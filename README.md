@@ -1,8 +1,8 @@
-# explore.ipld.io-chart
+# explore-ipld-io-chart
 
 A Helm chart for Kubernetes
 
-![Version: 0.1.1](https://img.shields.io/badge/Version-0.1.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v0.1.4](https://img.shields.io/badge/AppVersion-v0.1.4-informational?style=flat-square)
+![Version: 0.1.2](https://img.shields.io/badge/Version-0.1.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v0.1.6](https://img.shields.io/badge/AppVersion-v0.1.6-informational?style=flat-square)
 
 ## Installing the Chart
 
@@ -15,7 +15,7 @@ helm repo add paradeum-team https://paradeum-team.github.io/helm-charts/
 ### Install chart
 
 ```
-helm install my-ipfs-cluster-extend paradeum-team/ipfs-cluster-extend --version 0.1.1
+helm install my-ipfs-cluster-extend paradeum-team/ipfs-cluster-extend --version 0.1.2
 ```
 
 ## Values
@@ -38,7 +38,7 @@ helm install my-ipfs-cluster-extend paradeum-team/ipfs-cluster-extend --version 
 | fullnameOverride | string | `""` |  |
 | image.pullPolicy | string | `"IfNotPresent"` |  |
 | image.repository | string | `"registry.solarfs.io/ipfs/explore-ipld-io"` |  |
-| image.tag | string | `"v0.1.4"` |  |
+| image.tag | string | `"v0.1.6"` |  |
 | imagePullSecrets | list | `[]` |  |
 | ingress.annotations | object | `{}` |  |
 | ingress.className | string | `""` |  |
